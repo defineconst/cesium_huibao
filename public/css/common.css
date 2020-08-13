@@ -1,0 +1,84 @@
+.divpoint2 {
+  top: -1000px;
+  left: -1000px;
+  width: 200px;
+  height: 157px;
+  background: rgba(42, 42, 42, 0.8);
+  border-radius: 4px;
+  position: absolute;
+  background: url("../img/div2.png");
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  -webkit-animation: mymove 5s infinite;
+  animation: mymove 5s infinite;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: mymove;
+}
+
+.divpoint2 .title {
+  position: inherit;
+  top: 22px;
+  left: 70px;
+  font-size: 14px;
+  text-align: left;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0px 0px 9px rgba(127, 255, 255, 0.75);
+}
+
+.divpoint2 .content {
+  position: inherit;
+  top: 50px;
+  left: 50px;
+  width: 140px;
+  height: 30px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.divpoint1 {
+  top: -1000px;
+  left: -1000px;
+  width: 200px;
+  height: 134px;
+  background: rgba(42, 42, 42, 0.8);
+  border-radius: 4px;
+
+  position: absolute;
+  background: url("../img/div1.png");
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+
+  -webkit-animation: mymove 5s infinite;
+  animation: mymove 5s infinite;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: mymove;
+}
+
+.divpoint1 .title {
+  position: inherit;
+  top: 20px;
+  left: 70px;
+  font-size: 15px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0px 0px 9px rgba(127, 255, 255, 0.75);
+}

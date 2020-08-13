@@ -1,0 +1,40 @@
+.colorWapper{
+  position: relative;
+  .color{
+    border: 1px solid #999999;
+    height: 30px;
+    display:flex;
+    cursor: pointer;
+    .left{
+      width: 85%;
+      border-right: 1px solid #999999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .colorLine{
+        width: 80%;
+        height: 8px;
+        background-color: red;
+        border-radius: 4px;
+      }
+    }
+    .right{
+      width: 15%;
+      text-align: center;
+      line-height: 30px;
+      color:#999999;
+    }
+  }
+
+  .popover{
+    position: absolute;
+    z-index: 1000;
+    .cover{
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}

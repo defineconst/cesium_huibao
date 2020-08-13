@@ -1,0 +1,97 @@
+{
+  "map3d": {
+      "homeButton": false,
+      "sceneModePicker": false,
+      "navigationHelpButton": false,
+      "vrButton": false,
+      "fullscreenButton": false,
+      "geocoder": false,
+      "baseLayerPicker": false,
+      "center": {"x": 108.79874507300012,"y": 26.461238489000053,"z": 15000.87093563561, "heading": 360, "pitch": 0, "roll": 0},
+      "infoBox": false,
+      "navigation": {
+        "compass": { "top": "28px", "left": "32px" }
+      },
+      "terrain": {
+          "url": "http://data.marsgis.cn/terrain",
+          "visible": false
+      },
+      "crs": "",
+      "basemaps1":[
+        {
+            "pid": 10,
+            "name": "ArcGIS卫星",
+            "type": "arcgis",
+            "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+        }
+      ],
+      "basemaps": [
+          {
+              "id": 10,
+              "name": "地图底图",
+              "type": "group"
+          },
+          {
+              "pid": 10,
+              "name": "谷歌卫星",
+              "type": "www_google",
+              "crs": "wgs84",
+              "layer": "img_d",
+              "visible": true
+          },
+          {
+              "pid": 10,
+              "name": "ArcGIS卫星",
+              "type": "arcgis",
+              "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+          },
+          {
+              "pid": 10,
+              "name": "微软卫星",
+              "type": "www_bing",
+              "layer": "Aerial"
+          },
+          {
+              "pid": 10,
+              "name": "天地图卫星",
+              "type": "www_tdt",
+              "layer": "img_d" ,
+              "key": [
+                "313cd4b28ed520472e8b43de00b2de56",
+                "83b36ded6b43b9bc81fbf617c40b83b5",
+                "0ebd57f93a114d146a954da4ecae1e67",
+                "6c99c7793f41fccc4bd595b03711913e",
+                "56b81006f361f6406d0e940d2f89a39c"
+              ]
+          },
+          {
+              "pid": 10,
+              "name": "谷歌卫星(有偏移)",
+              "type": "group",
+              "crs": "gcj",
+              "layers": [
+                  { "name": "底图", "type": "www_google", "layer": "img_d" },
+                  { "name": "注记", "type": "www_google", "layer": "img_z" }
+              ]
+          },
+          {
+              "pid": 10,
+              "name": "谷歌卫星(有偏移)",
+              "type": "group",
+              "crs": "gcj",
+              "layers": [
+                  { "name": "底图", "type": "www_gaode", "layer": "img_d" },
+                  { "name": "注记", "type": "www_gaode", "layer": "img_z" }
+              ]
+          },
+          {
+              "pid": 10,
+              "name": "默认图片底图",
+              "type": "tms"
+          }
+      ],
+      "operationallayers": [
+          { "type": "custom_graticule", "name": "经纬网" }
+      ]
+  }
+}

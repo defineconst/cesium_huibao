@@ -1,0 +1,74 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+  
+  <link href="/lib/Cesium/Widgets/widgets.css" rel="stylesheet" />
+  <link href="/lib/cesium-3ds/3dv1.8.css" rel="stylesheet" />
+  <link href="/lib/iconfont/iconfont.css" rel="stylesheet" />
+  <link href="/css/common.css" rel="stylesheet" />
+  <link href="/css/DrawHelper.css" rel="stylesheet"/>
+  <link href="/css/index.css" rel="stylesheet" />
+  <link href="/lib/mapbox-gl.css" rel="stylesheet" />
+  <!-- <link href='https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css' rel='stylesheet' /> -->
+  <script src="/lib/pace.min.js"></script>
+  <link href="/lib/pace-theme-Flash.css" rel="stylesheet" />
+  <style>
+    #weather-float-he {
+      top: 25px !important;
+      z-index: 1000;
+      left: unset !important;
+      right: 275px;
+    }
+    .amap-logo{
+       display: none;
+       opacity:0 !important;
+       }
+       .amap-copyright {
+           opacity:0;
+       }
+  </style>
+
+  <title>三维汇报系统</title>
+  <!--高德地图-->
+  <!-- <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=3af939744afc672c506db9ee9956d24b"></script>  -->
+</head>
+
+<body>
+  <div id="root"></div>
+  <!-- <div id="weather-view-he" style="position: absolute;top: 80px; right: 0;"></div> -->
+</body>
+<script>
+  // WIDGET = { FID: '4wYQtvILvD' }
+  window.host = 'http://localhost:8085';
+  window.globalConfig = {
+    hangpian_dom:{
+      url: `http://localhost:8081/geoserver/gwc/service/wmts`,
+      name: 'a0516:shuiku1',
+      // url:'http://localhost:8081/geoserver/a0516/wms',// 航片正射影像图在geoserver中的地址
+      // name:'a0516:shuiku1',// 航片正射影像图在geoserver中的name
+    }
+  }
+</script>
+<script src="/lib/coordtransform.js"></script>
+<script src="/lib/jquery-3.4.1.min.js"></script>
+<script src="/lib/Cesium/Cesium.js"></script>
+<script src="/lib/cesium-3ds/3d-src.js"></script>
+<script src="/lib/haoutil.js"></script>
+<script src="/lib/heatmap.min.js"></script>
+<script src="/lib/viewerCesiumNavigationMixin.js"></script>
+<script src="/lib/glTF-Extension-for-1.52.js"></script>
+<script src="/lib/measure.js"></script>
+<script src='/lib/mapbox-gl.js'></script>
+<script src="/lib/DrawHelper.js"></script>
+<script src="/lib/flycesium.js"></script>
+<script src="/lib/turf/turf.js"></script>
+<!-- <script src="https://webapi.amap.com/loader.js"></script> -->
+
+<!-- <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script> -->
+
+</html>

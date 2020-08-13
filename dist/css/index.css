@@ -1,0 +1,167 @@
+#box {
+    /* display: none; */
+    /* height: 300px;
+    width: 500px;
+    background-color: red;
+    margin: -59px;
+    position: relative; */
+}
+/*三维飞行漫游界面css*/
+.fly3DPaths{
+    position: absolute;
+    left: 60px;
+    top: 60px;
+    z-index: 888;
+    background: rgba(34, 176, 238, 0.2);
+    /*height: 80%;*/
+    width: 400px;
+    padding-bottom: 15px;
+}
+.fly3DPaths_title {
+    padding: 0 80px 0 20px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid rgba(38,38,38,0.75);
+    font-size: 14px;
+    color: #000000;
+    overflow: hidden;
+    background-color: rgba(34, 176, 238, 0.75);
+    border-radius: 2px 2px 0 0;
+    cursor: default;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.fly3DClose{
+    position: absolute;
+    right: 6px;
+    top: 7px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../source/images/indexImage.png") -440px -130px;
+    cursor: pointer;
+}
+.fly3DPaths_content {
+    color: #fff;
+    /*height: 49px;*/
+    display: block;
+}
+.fly3DPaths_model_id {
+
+    height: 25px !important;
+    margin: 10px 4px 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(34, 176, 238, 0.5);
+    color: #fff;
+    border: solid 1px #fff;
+    -webkit-box-shadow: 0 0 5px rgba(255,255,255,.51), 0 0 5px rgba(255,255,255,.51);
+    -moz-box-shadow: 0 0 5px rgba(255,255,255,.51),0 0 5px rgba(255,255,255,.51);
+    -o-box-shadow: 0 0 5px rgba(255,255,255,.51),0 0 5px rgba(255,255,255,.51);
+    box-shadow: 0 0 5px rgba(255,255,255,.51), 0 0 5px rgba(255,255,255,.51);
+    cursor: pointer;
+    width: 70px !important;
+    float: left;
+}
+.fly3DPaths_model_id:focus{
+    outline: none;
+    border: 1px solid #00BFFF;
+}
+.fly3DPaths_tab{
+    height:28px;
+    line-height:28px;
+    /*border-bottom: 1px solid #1BB0F5;*/
+    position:relative;
+}
+.fly3DPaths_tab li{
+    float:left;
+    display:inline;
+    width:103px;
+    cursor:pointer;
+    position:relative;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+
+}
+.fly3DPaths_tab li.select:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60%;
+    left: 22%;
+    border-bottom: 2px solid #ced948;
+    bottom: 0;
+
+}
+.fly3DPaths_tab li span{
+    float:left;
+    display:block;
+}
+.fly3DPaths_tab a{
+    display:block;
+    float:left;
+    letter-spacing:1px;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+}
+.fly3DPaths_tab a:hover{
+    text-decoration: none;
+}
+.flss{
+    height:11px;
+    width:11px;
+    margin:7px 5px 0px 18px;
+    background:url(../indexImage.png) no-repeat -5px -133px;
+}
+#overFly_table .btn-default:hover {
+    background-color: rgba(0,0,0,0.7) !important;
+}
+.btn-default {
+    background-color: #2196F3 !important;
+}
+/*
+* table样式
+*/
+.ydph-talbe-head > table { margin-bottom:0px;table-layout:fixed;}
+.ydph-talbe-head > table > thead > tr { height:25px;}
+.ydph-talbe-head > table > tbody > tr { height:30px;}
+.ydph-talbe-head > table > thead > tr > th {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: none;
+    /* background-color: #f0f0f0; */
+    /* color: #323232; */
+    font-family: 黑体;
+    font-weight: normal;
+    color: #fff;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+
+}
+.ydph-talbe-head > table > tbody > tr > td { text-align:center;vertical-align:middle;}
+.ydph-talbe-head > table > thead > tr > th.colspan1{ width:30px;}
+.ydph-talbe-head > table > thead > tr > th.colspan2{ width:70px;}
+.ydph-talbe-head > table > thead > tr > th.colspan3{ width:185px;}
+.ydph-talbe-head > table > thead > tr > th.colspan4{ width:180px;}
+.ydph-talbe-head > table > tbody > tr > th{ border-bottom:none;}
+.ydph-talbe-head > table > thead > tr > th,
+.ydph-talbe-head > table > tbody > tr > th,
+.ydph-talbe-head > table > tfoot > tr > th,
+.ydph-talbe-head > table > thead > tr > td,
+.ydph-talbe-head > table > tbody > tr > td,
+.ydph-talbe-head > table > tfoot > tr > td {
+    padding: 1px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.ydph-talbe-head > table > tbody > tr:hover{background: rgba(0,0,0,0.7)}

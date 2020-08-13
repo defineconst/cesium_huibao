@@ -1,0 +1,135 @@
+.box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: midnightblue;
+  z-index: 999;
+  min-width: 1280px;
+  box-shadow: 1px 1px 3px #ccc;
+}
+
+.nav {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 1280px;
+  height: 100%;
+  .titBox {
+    display: flex;
+    align-items: center;
+    i {
+      display: block;
+      width: 36px;
+      height: 36px;
+      background: #ccc;
+    }
+    p {
+      margin: 0 120px 0 10px;
+      font-size: 24px;
+      color: #fff;
+    }
+  }
+  .menu {
+    flex: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    li {
+      position: relative;
+      margin-right: 48px;
+      a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+      }
+      &.active,
+      &:hover {
+        a.first {
+          color: #0eb893e8 ;
+        }
+      }
+      &:hover {
+        a.first:after {
+          position: absolute;
+          bottom: 16px;
+          left: 50%;
+          content: '';
+          display: block;
+          width: 38px;
+          height: 4px;
+          background:#0eb893e8;
+          transform: translate(-50%, 0);
+        }
+      }
+      &:hover {
+        .secondMenuBg,
+        .secondMenu {
+          display: block;
+        }
+      }
+      .secondMenuBg {
+        display: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 80px;
+        background: rgba(0,0,0,0.5);
+        z-index: 998;
+      }
+      .secondMenu {
+        display: none;
+        width: 800px;
+        position: absolute;
+        top: 80px;
+        // left: calc(50% - 200px);
+        left: calc(50% - 50px);
+        z-index: 999;
+        .secondMenuItem {
+          height: 35px;
+          margin: 5px 0 10px;
+          float: left;
+          width: 100px;
+          a {
+            display: flex;
+            justify-content: center;
+            color: #ffffff ;
+            &.active,
+            &:hover {
+              color: #0eb893e8 ;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .personal {
+    display: flex;
+    align-items: center;
+    i {
+      margin-right: 10px;
+      display: block;
+      width: 36px;
+      height: 36px;
+      background: url(./img/user.png) no-repeat;
+    }
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+}
+
+:global{
+  .ant-modal-wrap{
+    width: 600px;
+  }
+}

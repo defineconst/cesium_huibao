@@ -1,0 +1,40 @@
+.content {
+  margin: 70px 0 50px;
+  .box {
+    position: relative;
+    margin: 0 auto;
+    width: 210px;
+    text-align: center;
+    p {
+      margin: 0;
+      &:first-child {
+        font-size: 24px;
+        color: #333333;
+      }
+      &:last-child {
+        font-size: 14px;
+        color: #666;
+      }
+    }
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: -210px;
+      content: '';
+      display: block;
+      width: 180px;
+      height: 2px;
+      background: #D9E1EE;
+    }
+    &:after {
+      position: absolute;
+      top: 50%;
+      right: -210px;
+      content: '';
+      display: block;
+      width: 180px;
+      height: 2px;
+      background: #D9E1EE;
+    }
+  }
+}
